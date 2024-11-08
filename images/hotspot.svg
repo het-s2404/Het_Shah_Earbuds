@@ -1,0 +1,7 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="30" height="30" viewBox="0 0 30 30">
+  <!-- Transparent Circle Background -->
+  <circle cx="15" cy="15" r="12" fill="rgba(0, 102, 204, 0.5)" />
+
+  <!-- Simple Hotspot Icon -->
+  <circle cx="15" cy="15" r="8" fill="rgba(0, 102, 204, 0.8)" />
+</svg>
