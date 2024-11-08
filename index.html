@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Beats Earbuds</title>
+    <link rel="stylesheet" href="css/grid.css">
+    <link rel="stylesheet" href="css/main.css">
+</head>
+<body>
+
+    <!-- Header  -->
+
+    <header class="main-header" id="main-header">
+        <div class="logo">
+            <img src="images/beats_logo.png" alt="Logo">
+        </div>
+        <nav>
+            <ul>
+                <li><a href="#home">Home</a></li>
+                <li><a href="#features">Features</a></li>
+                <li><a href="#video">Video</a></li>
+            </ul>
+        </nav>
+    </header>
+
+   <!-- Hero Section -->
+
+   <section id="home" class="hero">    
+    <div class="hero-text">
+        <h1 class="info">Ultimate the best Sound Experience</h1>
+        <p class="info">Discover the Beats x Deadpool limited edition earbuds.</p>
+    </div>
+  </section>
+
+     <!-- Model-viewer Section -->
+<section class="beats-ar" id="features">
+  <model-viewer src="images/beats_deadpool.gltf" ar ar-modes="webxr scene-viewer quick-look" camera-controls tone-mapping="neutral" poster="images/poster.webp" shadow-intensity="1.5" exposure="0.81" shadow-softness="1" disable-zoom>
+    <button class="Hotspot" slot="hotspot-1" data-position="-0.22151846114758902m -0.14974770483910535m -0.36943589460358783m" data-normal="0.41671812414903575m 0.004173404191760781m -0.9090261754774508m" data-visibility-attribute="visible">
+        <div class="HotspotAnnotation" id="hotspot-1"></div>
+    </button><button class="Hotspot" slot="hotspot-2" data-position="-0.22245085001037193m -0.08580262254749363m -0.3701513271373505m" data-normal="0.340810598525632m 0.07148032862923973m -0.937410634968292m" data-visibility-attribute="visible">
+        <div class="HotspotAnnotation" id="hotspot-2"></div>
+    </button><button class="Hotspot" slot="hotspot-3" data-position="-0.22235861070580673m -0.08088688195903977m -0.3206634682595861m" data-normal="0.9075601837166548m 0.03370294432402217m 0.41856734759902575m" data-visibility-attribute="visible">
+        <div class="HotspotAnnotation" id="hotspot-3"></div>
+    </button><button class="Hotspot" slot="hotspot-4" data-position="-0.2243666774660829m -0.16457538512764286m -0.3391945471396443m" data-normal="-0.037001882020543386m -0.2526081252005257m 0.9668608978594664m" data-visibility-attribute="visible">
+        <div class="HotspotAnnotation" id="hotspot-4"></div>
+    </button>
+    <div class="progress-bar hide" slot="progress-bar">
+        <div class="update-bar"></div>
+    </div>
+  </model-viewer> 
+</section>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/ScrollTrigger.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/ScrollToPlugin.min.js"></script>
+  <script type="module" src="https://ajax.googleapis.com/ajax/libs/model-viewer/4.0.0/model-viewer.min.js"></script>
+  <script src="js/main.js"></script>
+</body>
+</html>
