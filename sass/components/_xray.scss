@@ -1,0 +1,102 @@
+#comparison-con {
+    display: none;
+}
+
+@media (max-width: 1920px) {
+
+  #x-ray h2 {
+    margin-top: 50px;
+    text-align: center;
+    font-size: 54px;
+    font-weight: 600;
+    color: #ffffff;
+  }
+
+  #x-ray p {
+    margin-top: 30px;
+    width: 800px;
+    font-size: 32px;
+    font-weight: 600;
+    color: #79d2bf;
+  }
+  
+  #mobile-tablet-view{
+    display: none;
+  }
+
+  #comparison-con{
+    display: block;
+  }
+
+#xray{
+  position: relative;
+  aspect-ratio: 17/10;
+  background-image: url(../images/xray.png);
+  background-size: cover;
+  margin-top: 30px;
+}
+
+#divisor{
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 50%;
+  background-image: url(../images/beats.png);
+  background-size: cover;
+}
+
+input[type=range] {
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+  position: relative;
+  top: -18px;
+  background-color: rgba(255, 255, 255, 0.1);
+  width: 100%;
+}
+
+input[type=range]:focus {
+  outline: none;
+}
+
+input[type=range]::-moz-range-track {
+  height: 15px;
+  width: 98%;
+  background-color: rgba(255, 255, 255, 0.1);
+  position: relative;
+  outline: none;
+}
+
+input[type=range]::active {
+  border: none;
+  outline: none;
+}
+
+input[type=range]::-webkit-slider-thumb {
+  -webkit-appearance: none;
+  appearance: none;
+  width: 20px;
+  height: 15px;
+  background: #fff;
+  border-radius: 0;
+}
+
+input[type=range]::-moz-range-thumb {
+  -moz-appearance: none;
+  appearance: none;
+  width: 20px;
+  height: 15px;
+  background: #fff;
+  border-radius: 0;
+}
+
+input[type=range]:focus::-webkit-slider-thumb {
+  background: rgba(255, 255, 255, 0.5);
+}
+
+input[type=range]:focus::-moz-range-thumb {
+  background: rgba(255, 255, 255, 0.5);
+}
+
+}
