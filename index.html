@@ -10,8 +10,8 @@
 <body>
 
     <!-- Header  -->
-
-    <header class="main-header" id="main-header">
+    <div class="grid-con">
+    <header class="col-span-full" id="main-header">
         <div class="logo">
             <img src="images/beats_logo.png" alt="Logo">
         </div>
@@ -23,7 +23,7 @@
             </ul>
         </nav>
     </header>
-
+    </div>
    <!-- Hero Section -->
 
    <section id="home" class="hero">    
@@ -33,9 +33,16 @@
     </div>
   </section>
 
+  <!--Promo video-->
+
+  <div id="video" class="col-span-full">
+    <canvas id="promo-video"></canvas>
+ </div>
+ 
+
      <!-- Model-viewer Section -->
 <section class="beats-ar" id="features">
-  <model-viewer src="images/beats_deadpool.gltf" ar ar-modes="webxr scene-viewer quick-look" camera-controls tone-mapping="neutral" poster="images/poster.webp" shadow-intensity="1.5" exposure="0.81" shadow-softness="1" disable-zoom>
+  <model-viewer id="model" src="images/beats_deadpool.gltf" ar ar-modes="webxr scene-viewer quick-look" camera-controls tone-mapping="neutral" poster="images/poster.webp" shadow-intensity="1.5" exposure="0.81" shadow-softness="1" disable-zoom>
     <button class="Hotspot" slot="hotspot-1" data-position="-0.22151846114758902m -0.14974770483910535m -0.36943589460358783m" data-normal="0.41671812414903575m 0.004173404191760781m -0.9090261754774508m" data-visibility-attribute="visible">
         <div class="HotspotAnnotation" id="hotspot-1"></div>
     </button><button class="Hotspot" slot="hotspot-2" data-position="-0.22245085001037193m -0.08580262254749363m -0.3701513271373505m" data-normal="0.340810598525632m 0.07148032862923973m -0.937410634968292m" data-visibility-attribute="visible">
@@ -50,6 +57,48 @@
     </div>
   </model-viewer> 
 </section>
+
+<!-- X-ray section-->
+
+<div class="grid-con">
+    <section class="col-span-full m-col-start-3 m-col-end-11 l-col-start-4 l-col-end-10" id="x-ray">
+        <h2>Beats DeadPool</h2>
+        <p>latest edition DeadPool true wireless earbuds</p>
+    </section>
+
+    <div class="col-span-full">
+        <div class="x-ray" id="mobile-tablet-view">
+            <img src="images/Xray.png">
+            <img src="images/Beats.png">
+        </div>
+
+            <div id="comparison-con">
+                <div id="xray">
+                    <div id="divisor"></div>
+                </div>
+
+                <input type="range" min="0" max="100" value="50" id="slider">
+
+            </div>
+    </div>
+</div>
+
+<!--Color swap-->
+    <div class="grid-con">
+        <section class="col-span-full">
+            <h2 class="color-title">Popular Colors</h2>
+            <section class="popular" id="color-con">
+                <img src="images/grey.png" id="beats">
+                <div class="color-container">
+                    <button class="color-btn" id="grey"></button>
+                    <button class="color-btn" id="green"></button>
+                    <button class="color-btn" id="blue"></button>
+                    <button class="color-btn" id="red"></button>
+                </div>
+            </section>
+        </section>
+    </div>
+
   <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js"></script>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/ScrollTrigger.min.js"></script>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/ScrollToPlugin.min.js"></script>
